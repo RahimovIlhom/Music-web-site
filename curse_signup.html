@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ro'yxatdan o'tish</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/matricula.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="index.html" class="navbar-brand"><img src="img/musicdot-logo-light.svg" alt="Logo da Musicdot"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Kurslar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Ro'yxatdan o'tish</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Elektron pochta</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container mb-4">
+    <div class="jumbotron bg-dark header-matricula text-light mt-3">
+      <div class="container">
+        <h1>Kurslarni tanlang</h1>
+        <p class="lead">Ro'yxatdan o'tmoqchi bo'lgan kurslarni tanlang</p>
+      </div>
+    </div>
+
+    <table class="table table-hover rounded-top">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Kurs</th>
+          <th scope="col">Vaqt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+          <td>Klaviatura va pianino kurslari</td>
+          <td>20 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+          <td>Gitara / akustik gitara kurslari</td>
+          <td>30 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+          <td>Skripka kurslari</td>
+          <td>12 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="25"></td>
+          <td>Baraban kurslari</td>
+          <td>25 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="26"></td>
+          <td>Perkussiya kurslari</td>
+          <td>26 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="15"></td>
+          <td>Qo'shiq kurslari</td>
+          <td>15 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="29"></td>
+          <td>Audio kurslar</td>
+          <td>29 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="31"></td>
+          <td>Saksafon kurslari</td>
+          <td>31 soat</td>
+        </tr>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="40"></td>
+          <td>Torlar kurslari</td>
+          <td>40 soat</td>
+        </tr>
+        <tr class="bg-dark text-light">
+          <td>Jami</td>
+          <td class="js-total-de-cursos">0 kurs(lar)</td>
+          <td class="js-total-de-horas">0 soat</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="js-botao-matricula btn btn-outline-dark btn-lg mb-4">
+      Ro'yxatdan o'tishni tasdiqlang
+    </button>
+  </main>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/tuition.js"></script>
+</body>
+</html>
